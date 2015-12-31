@@ -11,10 +11,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -32,7 +30,6 @@ import com.google.android.gms.maps.model.LatLng;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.util.Calendar;
 
@@ -146,9 +143,8 @@ public class PredictFragment extends Fragment {
                         new Response.ErrorListener() {
                             @Override
                             public void onErrorResponse(VolleyError error) {
-                                Snackbar snackbar = Snackbar
-                                        .make(v, error.getMessage() + " - ", Snackbar.LENGTH_LONG);
-                                snackbar.show();
+                                OnErrorDialogFragment dialog = new OnErrorDialogFragment();
+                                dialog.show(getFragmentManager(), "onError");
 
                                 predictSapeada.setEnabled(true);
                             }

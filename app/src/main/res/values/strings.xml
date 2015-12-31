@@ -15,4 +15,7 @@
     <string name="history_frag_to_valpo">Hacia Valparaiso</string>
     <string name="history_frag_to_vina">Hacia Viña del Mar</string>
 
+    <!-- Dialogs -->
+    <string name="dialog_ok">Ok</string>
+    <string name="dialog_see_code">Ver código</string>
 </resources>

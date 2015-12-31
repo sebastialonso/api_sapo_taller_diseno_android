@@ -9,4 +9,5 @@ public class Constants {
     public static final String URL_LOGIN = URL_BASE + V1 + "/users/sessions";
     public static final String URL_POST_SAPEADA = URL_BASE + V1 + "/sapeadas";
     public static final String URL_PREDICT = URL_BASE + V1 + "/prediccion";
+    public static final String URL_TO_REPO = "https://github.com/sebastialonso/api_sapo_taller_diseno";
 }

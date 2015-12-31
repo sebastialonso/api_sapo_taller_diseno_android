@@ -27,7 +27,7 @@ import java.util.Calendar;
 /**
  * Created by seba on 12/27/15.
  */
-public class SapearFragment extends Fragment{
+public class SapearFragment extends Fragment {
 
     public static SapearFragment newInstance(String text){
         SapearFragment sf =  new SapearFragment();
@@ -107,9 +107,9 @@ public class SapearFragment extends Fragment{
                         new Response.ErrorListener() {
                             @Override
                             public void onErrorResponse(VolleyError error) {
-                                Snackbar snackbar = Snackbar
-                                        .make(v, error.getMessage() + " - ", Snackbar.LENGTH_LONG);
-                                snackbar.show();
+
+                                OnErrorDialogFragment dialog = new OnErrorDialogFragment();
+                                dialog.show(getFragmentManager(), "onError");
 
                                 submitSapeada.setEnabled(true);
                             }
