@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Api_sapo_taller_diseno</string>
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">218936648438713</string>
+    <string name="mapbox_access_token">sk.eyJ1Ijoic2ViYXN0aWFsb25zbyIsImEiOiJjaWlvdGtqbXQwMWprdWlrcG9zOTg4am1rIn0.YZIPXhwdCMz1NF4qrrPa8Q</string>
+    <string name="no_location">No se ha detectado ubiacion</string>
+    <string name="valpo">Valparaiso</string>
+    <string name="vina">Viña del Mar</string>
+
+    <!-- Sapear fragment -->
+    <string name="sapear_frag_instructions">Recuerda que sapeadas incorrectas pueden dañar las predicciones para todos.</string>
+    <string name="sapear_frag_radiogroup_title">Selecciona la dirección</string>
+
+    <!-- History fragment -->
+    <string name="history_frag_to_valpo">Hacia Valparaiso</string>
+    <string name="history_frag_to_vina">Hacia Viña del Mar</string>
+
+</resources>
